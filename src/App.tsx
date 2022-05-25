@@ -5,13 +5,21 @@ export const App = defineComponent({
   setup() {
     return () => (
       <>
-        <h1>Hello App!</h1>
-        <p>
-          <RouterLink to="/">Go to Foo</RouterLink>
-          <br></br>
-          <RouterLink to="/bar">Go to Bar</RouterLink>
-        </p>
-        <RouterView></RouterView>
+        <header>
+          导航
+          <ul>
+            <li>
+              <RouterLink to="/">Foo</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/bar">Bar</RouterLink>
+            </li>
+          </ul>
+        </header>
+        <div>
+          <RouterView></RouterView>
+        </div>
+        <footer>页脚</footer>
       </>
     );
   },
