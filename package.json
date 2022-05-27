@@ -14,11 +14,15 @@
     "vue-router": "4"
   },
   "devDependencies": {
+    "@iconify-json/twemoji": "1.1.4",
     "@types/jest": "27.5.1",
+    "@unocss/preset-attributify": "0.34.1",
+    "@unocss/reset": "0.34.1",
     "@vitejs/plugin-vue": "2.3.3",
     "jest": "27.5.1",
     "ts-jest": "27.1.4",
     "typescript": "4.7.2",
+    "unocss": "0.34.1",
     "unplugin-auto-import": "0.8.5",
     "vite": "2.9.9",
     "vue-tsc": "0.34.16"

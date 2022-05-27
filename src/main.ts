@@ -4,6 +4,10 @@ import { App } from "./App";
 import { Bar } from "./views/Bar";
 import { Foo } from "./views/Foo";
 
+import "@unocss/reset/tailwind.css";
+import "./styles/main.css";
+import "uno.css";
+
 const routes = [
   { path: "/", component: Foo },
   { path: "/bar", component: Bar },
