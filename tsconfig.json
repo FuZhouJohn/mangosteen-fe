@@ -12,13 +12,14 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
-    "types": ["vite/client", "vite-plugin-pages/client"]
+    "types": ["vite/client", "vite-plugin-pages/client", "jest"]
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
+    "tests/**/*.ts",
     "auto-imports.d.ts",
     "shims.d.ts"
   ]
