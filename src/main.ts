@@ -1,22 +1,14 @@
 import { createApp } from "vue";
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter } from "vue-router";
 import { App } from "./App";
-import { Bar } from "./views/Bar";
-import { Foo } from "./views/Foo";
+import { routes } from "./config/routes";
+import { history } from "./shared/history";
 
 import "@unocss/reset/tailwind.css";
 import "./styles/main.css";
 import "uno.css";
 
-const routes = [
-  { path: "/", component: Foo },
-  { path: "/bar", component: Bar },
-];
-
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
-});
+const router = createRouter({ history, routes });
 
 const app = createApp(App);
 
