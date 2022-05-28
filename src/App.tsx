@@ -1,5 +1,4 @@
 import { RouterLink, RouterView } from "vue-router";
-import { Foo } from "./views/Foo";
 
 export const App = defineComponent({
   setup() {
@@ -9,10 +8,13 @@ export const App = defineComponent({
           导航
           <ul>
             <li>
-              <RouterLink to="/">Foo</RouterLink>
+              <RouterLink to="/foo">Foo</RouterLink>
             </li>
             <li>
               <RouterLink to="/bar">Bar</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/welcome/1">Welcome</RouterLink>
             </li>
           </ul>
         </header>

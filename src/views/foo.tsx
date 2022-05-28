@@ -1,4 +1,4 @@
-export const Foo = defineComponent({
+const Foo = defineComponent({
   setup() {
     const refCount = ref(0);
     const onClick = () => {
@@ -16,3 +16,4 @@ export const Foo = defineComponent({
     );
   },
 });
+export default Foo;
