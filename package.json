@@ -16,6 +16,7 @@
   "devDependencies": {
     "@iconify-json/twemoji": "1.1.4",
     "@types/jest": "27.5.1",
+    "@types/node": "17.0.35",
     "@unocss/preset-attributify": "0.34.1",
     "@unocss/reset": "0.34.1",
     "@vitejs/plugin-vue": "2.3.3",
@@ -25,6 +26,7 @@
     "unocss": "0.34.1",
     "unplugin-auto-import": "0.8.5",
     "vite": "2.9.9",
+    "vite-plugin-pages": "0.23.0",
     "vue-tsc": "0.34.16"
   }
 }

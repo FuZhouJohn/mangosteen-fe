@@ -1,12 +1,19 @@
+import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import AutoImport from "unplugin-auto-import/vite";
 import Unocss from "unocss/vite";
+import Pages from "vite-plugin-pages";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "/mangosteen-fe/",
+  resolve: {
+    alias: {
+      "~/": `${path.resolve(__dirname, "src")}/`,
+    },
+  },
   plugins: [
     vue(),
     vueJsx({
@@ -18,5 +25,14 @@ export default defineConfig({
       dts: true,
     }),
     Unocss(),
+    Pages({
+      dirs: "src/views",
+      extensions: ["tsx"],
+      exclude: ["**/components/*.tsx"],
+      extendRoute(route, parent) {
+        console.log(route);
+        return route;
+      },
+    }),
   ],
 });
