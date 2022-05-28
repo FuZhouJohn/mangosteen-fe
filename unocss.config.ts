@@ -21,7 +21,6 @@ export default defineConfig({
     presetUno(),
     presetAttributify(),
     presetIcons({
-      scale: 1.2,
       warn: true,
     }),
     presetWebFonts({

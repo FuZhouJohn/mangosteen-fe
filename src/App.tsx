@@ -4,7 +4,7 @@ import { Foo } from "./views/Foo";
 export const App = defineComponent({
   setup() {
     return () => (
-      <>
+      <div class="font-mono">
         <header>
           导航
           <ul>
@@ -20,7 +20,7 @@ export const App = defineComponent({
           <RouterView></RouterView>
         </div>
         <footer>页脚</footer>
-      </>
+      </div>
     );
   },
 });
