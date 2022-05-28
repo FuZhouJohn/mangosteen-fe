@@ -21,7 +21,7 @@ export default defineConfig({
       mergeProps: true,
     }),
     AutoImport({
-      imports: ["vue", "vue/macros", "vue-router"],
+      imports: ["vue", "vue/macros", "vue-router", "@vueuse/core"],
       dts: true,
     }),
     Unocss(),
