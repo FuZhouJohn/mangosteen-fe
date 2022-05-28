@@ -29,10 +29,6 @@ export default defineConfig({
       dirs: "src/views",
       extensions: ["tsx"],
       exclude: ["**/components/*.tsx"],
-      extendRoute(route, parent) {
-        console.log(route);
-        return route;
-      },
     }),
   ],
 });
