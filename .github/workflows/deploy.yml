@@ -45,9 +45,9 @@ jobs:
         run: pnpm run test
 
       - name: Build
-        run: pnpm run build
+        run: VITE_BASE_URL=$Vite_Base_URL pnpm run build
         env:
-          VITE_BASE_URL: mangosteen-fe
+          Vite_Base_URL: mangosteen-fe
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
