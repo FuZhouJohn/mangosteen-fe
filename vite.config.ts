@@ -7,6 +7,8 @@ import Unocss from "unocss/vite";
 import Pages from "vite-plugin-pages";
 
 // https://vitejs.dev/config/
+console.log(process.env.BASE_URL);
+
 export default defineConfig({
   base: process.env.BASE_URL || "/",
   resolve: {
