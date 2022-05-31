@@ -1,1 +1,1 @@
-https://fuzhoujohn.github.io/mangosteen-fe/
+[Preview](https://mg-fe.netlify.app)
