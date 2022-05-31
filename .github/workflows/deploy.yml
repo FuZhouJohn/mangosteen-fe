@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  Base_URL: /mangosteen/
+  BASE_URL: /mangosteen/
 
 jobs:
   build:
@@ -47,7 +47,7 @@ jobs:
       - name: Create env file
         run: |
           touch .env
-          echo BASE_URL=${{ Base_URL }} >> .env
+          echo BASE_URL=$BASE_URL >> .env
 
       - name: Test
         run: pnpm run test
