@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "baseUrl": ".",
+    "target": "es2016",
     "useDefineForClassFields": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
@@ -12,7 +13,13 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
-    "types": ["vite/client", "vite-plugin-pages/client", "jest"]
+    "types": ["vite/client", "vite-plugin-pages/client", "jest"],
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
   "include": [
     "src/**/*.ts",
@@ -22,5 +29,6 @@
     "tests/**/*.ts",
     "auto-imports.d.ts",
     "shims.d.ts"
-  ]
+  ],
+  "exclude": ["dist", "node_modules"]
 }

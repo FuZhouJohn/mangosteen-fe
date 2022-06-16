@@ -4,7 +4,7 @@ const WeclomeIndex = defineComponent({
   setup() {
     return () => (
       <div class="h-100% flex flex-col p-5 color-hex-333 relative">
-        <header class="flex-shrink-0 flex flex-col justify-center items-center">
+        <header class="justify-center items-center" flex="~ shrink-0 col">
           <div class="font-xiaowei text-left w-100% text-40px">山竹记账</div>
         </header>
         <main class="flex-1">

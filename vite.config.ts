@@ -20,15 +20,15 @@ export default defineConfig({
       transformOn: true,
       mergeProps: true,
     }),
+    Pages({
+      dirs: "src/views",
+      extensions: ["tsx", "vue"],
+      exclude: ["**/components/*.tsx"],
+    }),
     AutoImport({
       imports: ["vue", "vue/macros", "vue-router", "@vueuse/core"],
       dts: true,
     }),
     Unocss(),
-    Pages({
-      dirs: "src/views",
-      extensions: ["tsx"],
-      exclude: ["**/components/*.tsx"],
-    }),
   ],
 });
