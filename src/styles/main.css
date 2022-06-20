@@ -17,3 +17,13 @@ html {
     "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti",
     SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
+
+body {
+  color: var(--mg-c-text-1);
+  background-color: var(--mg-c-bg);
+}
+
+:root {
+  --mg-c-bg: rgba(107, 114, 128, 0.1);
+  --mg-c-text-1: rgba(51, 51, 51);
+}
