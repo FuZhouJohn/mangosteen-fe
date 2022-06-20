@@ -1,7 +1,7 @@
 {
   "name": "mangosteen-fe",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0", 
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -28,7 +28,6 @@
     "unocss": "0.39.0",
     "unplugin-auto-import": "0.8.5",
     "vite": "2.9.9",
-    "vite-plugin-pages": "0.23.0",
     "vue-tsc": "0.35.2"
   }
 }

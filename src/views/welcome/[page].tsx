@@ -9,11 +9,13 @@ const Welcome = defineComponent({
   },
   setup(props, context) {
     const router = useRouter();
+    const route = useRoute();
 
     const pages = ["1", "2", "3"];
-    const pageRef = toRef(props, "page");
+    const pageRef = computed(() => route.params.page);
+
     const notLastPage = computed(() => {
-      return pages.includes(pageRef.value);
+      return pages.includes(pageRef.value as string);
     });
 
     const textMap = [
