@@ -1,3 +1,8 @@
+:root {
+  --mg-c-bg: rgba(107, 114, 128, 0.1);
+  --mg-c-text-1: rgba(51, 51, 51);
+}
+
 html,
 body,
 #app {
@@ -23,7 +28,12 @@ body {
   background-color: var(--mg-c-bg);
 }
 
-:root {
-  --mg-c-bg: rgba(107, 114, 128, 0.1);
-  --mg-c-text-1: rgba(51, 51, 51);
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
