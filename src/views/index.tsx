@@ -1,7 +1,7 @@
 const Home = defineComponent({
   setup(props, context) {
-    return () => <div>123</div>;
-  },
-});
+    return () => <div>123</div>
+  }
+})
 
-export default Home;
+export default Home

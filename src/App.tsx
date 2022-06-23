@@ -1,4 +1,4 @@
-import { RouterView } from "vue-router";
+import { RouterView } from 'vue-router'
 
 export const App = defineComponent({
   setup() {
@@ -6,6 +6,6 @@ export const App = defineComponent({
       <div class="h-100%">
         <RouterView></RouterView>
       </div>
-    );
-  },
-});
+    )
+  }
+})

@@ -1,37 +1,37 @@
-import { RouterLink } from "vue-router";
+import { RouterLink } from 'vue-router'
 
 const Welcome = defineComponent({
   props: {
     page: {
       type: String,
-      default: "1",
-    },
+      default: '1'
+    }
   },
   setup(props, context) {
-    const router = useRouter();
-    const route = useRoute();
+    const router = useRouter()
+    const route = useRoute()
 
-    const pages = ["1", "2", "3"];
-    const pageRef = computed(() => route.params.page);
+    const pages = ['1', '2', '3']
+    const pageRef = computed(() => route.params.page)
 
     const notLastPage = computed(() => {
-      return pages.includes(pageRef.value as string);
-    });
+      return pages.includes(pageRef.value as string)
+    })
 
     const textMap = [
-      ["会挣钱", "还要会省钱"],
-      ["每日提醒", "不会遗漏每一笔账单"],
-      ["数据可视化", "收支一目了然"],
-      ["会挣钱", "还要会省钱"],
-    ];
+      ['会挣钱', '还要会省钱'],
+      ['每日提醒', '不会遗漏每一笔账单'],
+      ['数据可视化', '收支一目了然'],
+      ['云备份', '再也不怕数据丢失']
+    ]
 
     const toNext = () => {
       if (notLastPage.value) {
-        router.replace(`/welcome/${Number(pageRef.value) + 1}`);
+        router.replace(`/welcome/${Number(pageRef.value) + 1}`)
       } else {
-        router.replace("/");
+        router.replace('/')
       }
-    };
+    }
 
     return () => (
       <div class="flex h-100%">
@@ -56,7 +56,7 @@ const Welcome = defineComponent({
           </div>
         </div>
       </div>
-    );
-  },
-});
-export default Welcome;
+    )
+  }
+})
+export default Welcome

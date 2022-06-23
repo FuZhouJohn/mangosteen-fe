@@ -1,8 +1,8 @@
 const All = defineComponent({
-  props: ["all"],
+  props: ['all'],
   setup(props, context) {
-    return () => <div>是不是走错了？{props.all}</div>;
-  },
-});
+    return () => <div>是不是走错了？{props.all}</div>
+  }
+})
 
-export default All;
+export default All

@@ -1,4 +1,4 @@
-import { RouterView } from "vue-router";
+import { RouterView } from 'vue-router'
 
 const WeclomeIndex = defineComponent({
   setup() {
@@ -11,7 +11,7 @@ const WeclomeIndex = defineComponent({
           <RouterView></RouterView>
         </main>
       </div>
-    );
-  },
-});
-export default WeclomeIndex;
+    )
+  }
+})
+export default WeclomeIndex
