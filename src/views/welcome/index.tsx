@@ -1,4 +1,4 @@
-import { Transition, VNode, withModifiers } from 'vue'
+import { Transition, VNode } from 'vue'
 import {
   RouteLocationNormalizedLoaded,
   RouterLink,
@@ -22,8 +22,8 @@ const WeclomeIndex = defineComponent({
               Component: VNode
               route: RouteLocationNormalizedLoaded
             }) => (
-              <Transition name="fade">
-                <Component key={'page' + route.params.page}></Component>
+              <Transition name="slide-fade">
+                {h(Component, { key: 'page-' + route.params.page })}
               </Transition>
             )}
           </RouterView>

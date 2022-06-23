@@ -1,6 +1,3 @@
-import { Transition } from 'vue'
-import { RouterLink } from 'vue-router'
-
 const Welcome = defineComponent({
   setup() {
     const route = useRoute()
@@ -14,8 +11,8 @@ const Welcome = defineComponent({
     ]
 
     return () => (
-      <div class="flex h-100%">
-        <div class="text-24px absolute left-5 top-50% -translate-y-50%">
+      <div class="flex h-100% relative">
+        <div class="text-24px absolute left top-50% -translate-y-50%">
           {textMap[Number(pageRef.value) - 1]?.map((text) => (
             <div>{text}</div>
           ))}
