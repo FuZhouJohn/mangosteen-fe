@@ -9,9 +9,11 @@ const WeclomeIndex = defineComponent({
   setup() {
     const route = useRoute()
     return () => (
-      <div class="h-100% flex flex-col p-5" flex="~ col">
+      <div class="h-100% p-5" flex="~ col">
         <header class="justify-center items-center" flex="~ shrink-0 col">
-          <div class="font-xiaowei text-left w-100% text-40px">山竹记账</div>
+          <div class="font-xiaowei w-100%" text="left 40px">
+            山竹记账
+          </div>
         </header>
         <main class="flex-1">
           <RouterView>
@@ -60,7 +62,8 @@ const Footer = defineComponent({
           )}
         </div>
         <div
-          class="w-50px h-50px flex justify-center items-center bg-hex-333 rounded-1/2 active:bg-gray-500"
+          class="w-50px h-50px flex justify-center items-center rounded-1/2"
+          bg="hex-333 active:gray-500"
           onClick={toNext}
         >
           <div class="i-carbon-chevron-right text-24px color-white"></div>
