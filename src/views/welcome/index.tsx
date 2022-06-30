@@ -9,7 +9,7 @@ const WeclomeIndex = defineComponent({
   setup() {
     const route = useRoute()
     return () => (
-      <div class="h-100% p-5" flex="~ col">
+      <div class="h-100% p-5 of-hidden" flex="~ col">
         <header class="justify-center items-center" flex="~ shrink-0 col">
           <div class="font-xiaowei w-100%" text="left 40px">
             山竹记账
