@@ -9,8 +9,6 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 
-console.log(routes)
-
 const router = createRouter({ history, routes })
 
 const app = createApp(App)
