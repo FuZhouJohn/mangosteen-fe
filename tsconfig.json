@@ -11,14 +11,23 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "skipLibCheck": true,
-    "types": ["vite/client", "jest"],
+    "types": [
+      "vite/client",
+      "jest",
+      "vite-plugin-pages/client"
+    ],
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "allowJs": true,
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": [
+        "src/*"
+      ]
     }
   },
   "include": [
@@ -30,5 +39,8 @@
     "auto-imports.d.ts",
     "shims.d.ts"
   ],
-  "exclude": ["dist", "node_modules"]
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }
